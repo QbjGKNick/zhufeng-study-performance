@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    /* show Rending 查看重绘操作 windows 按键 shift+ctrl+P + 搜索 show Rendering */
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+        /* width: 100px */
+      }
+      to {
+        transform: rotate(360deg);
+        /* width: 500px */
+      }
+    }
+    #app {
+      width: 100px;
+      height: 100px;
+      background: red;
+      animation: rotate 0.2s linear infinite;
+    }
+  </style>
+  <div id="app"></div>
+
+  <div style="will-change: transform">my</div>
+</body>
+</html>
